@@ -30,9 +30,9 @@ fetch('https://www.world-wonders-api.org/v0/wonders')
      </div>
 
     <div class="links">
-      <a href="${wonder.links.wiki}" target="_blank">Wikipedia</a>
+      <a href="${wonder.links.wiki}" target="_blank"><i class="fa-brands fa-wikipedia-w"></i></a>
       <a href="${wonder.links.britannica}" target="_blank">Britannica</a>
-      <a href="${wonder.links.google_maps}" target="_blank">Google Maps</a>
+      <a href="${wonder.links.google_maps}" target="_blank"><i class="fa-solid fa-map"></i></a>
       <a href="${wonder.links.trip_advisor}" target="_blank">TripAdvisor</a>
     </div>
     `;
