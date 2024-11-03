@@ -23,6 +23,12 @@ fetch('https://www.world-wonders-api.org/v0/wonders')
      <p><strong>Location:</strong> ${wonder.location}</p>
     <p><strong>Build Year:</strong> ${wonder.build_year}</p>
     <p><strong>Time Period:</strong> ${wonder.time_period}</p>
+       <div class="slideshow">
+      ${wonder.links.images.map((img, index) =>
+        `<img src="${img}" alt="${wonder.name}" class="wonder-image ${index === 0 ? 'active' : ''}">`
+      ).join('')}
+     </div>
+
     <div class="links">
       <a href="${wonder.links.wiki}" target="_blank">Wikipedia</a>
       <a href="${wonder.links.britannica}" target="_blank">Britannica</a>
@@ -32,3 +38,16 @@ fetch('https://www.world-wonders-api.org/v0/wonders')
     `;
 
  }
+
+ function startSlideshow() {
+    const images = document.querySelectorAll('.slideshow img');
+    let currentImageIndex = 0;
+  
+    setInterval(() => {
+      images[currentImageIndex].classList.remove('active');
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      images[currentImageIndex].classList.add('active');
+    }, 3000); 
+  }
+  startSlideshow();
+  

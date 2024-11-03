@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  #wonder-container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .wonder-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .wonder-summary {
+    margin-bottom: 15px;
+  }
+  
+  .wonder-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .slideshow {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    display: none;
+  }
+  
+  .slideshow img.active {
+    display: block;
+  }
+  
+  .links a {
+    margin: 5px;
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
