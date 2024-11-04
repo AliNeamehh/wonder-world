@@ -17,7 +17,7 @@ function displayWonders(wonders) {
         wonderElement.innerHTML = `
          <h2>${wonder.name}</h2>
          <img src="${wonder.links.images[0]}" alt="${wonder.name}">
-         <a href="detail.html?name=${encodeURI(wonder.name)}">  <button>give me more detais</button> </a>
+         <a href="detail.html?name=${encodeURI(wonder.name)}">  <button>More Details</button> </a>
         
           `;
         container.appendChild(wonderElement);
